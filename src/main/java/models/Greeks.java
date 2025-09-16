@@ -53,4 +53,5 @@ public class Greeks {
         double d2 = dTwo(s, k, r, sigma, t);
         return -k * t * Math.exp(-r * t) * NormalDistributionUtil.cdf(-d2);
     }
+
 }

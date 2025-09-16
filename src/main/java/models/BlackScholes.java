@@ -21,4 +21,5 @@ public class BlackScholes {
 
         return (k * Math.exp(-r*t) * NormalDistributionUtil.cdf(-dTwoVal) - s * NormalDistributionUtil.cdf(-dOneVal));
     }
+
 }

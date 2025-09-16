@@ -23,7 +23,7 @@ public class MonteCarlo {
      return Math.max(sT - k, 0.0);
     }
 
-    double priceCallMc(double s, double k, double r, double sigma, double t, int n) {
+    public double priceCallMc(double s, double k, double r, double sigma, double t, int n) {
         double sum = 0.0;
         for (int i = 1; i <= n; i++) {
             double sT = brownianMotion(s, r, sigma, t);
@@ -32,7 +32,7 @@ public class MonteCarlo {
         return Math.exp(-r*t) * sum / n;
     }
 
-    double pricePutMc(double s, double k, double r, double sigma, double t, int n) {
+    public double pricePutMc(double s, double k, double r, double sigma, double t, int n) {
         double sum = 0.0;
         for (int i = 1; i <= n; i++) {
             double sT = brownianMotion(s, r, sigma, t);

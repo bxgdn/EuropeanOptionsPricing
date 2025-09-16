@@ -21,4 +21,5 @@ public class RandomGenerator {
     public double nextGaussian(){
         return rng.nextGaussian();
     }
+
 }
