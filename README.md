@@ -96,8 +96,8 @@ p = \frac{e^{r \Delta t} - d}{u - d}
 $$
 
 
-## 🖥 GUI (Optional)
-You can extend `OptionPricer.java` with a **Swing or JavaFX GUI**:
+## 🖥 GUI
+- Implemented a swing GUI
 - Inputs: `S`, `K`, `r`, `σ`, `T`, number of steps/simulations.
 - Dropdown to select **Black–Scholes**, **Binomial Tree**, or **Monte Carlo**.
 - Display **Call/Put prices** and **Greeks**.
